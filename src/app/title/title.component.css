@@ -1,0 +1,16 @@
+main{
+    background-image: "../assets/estado-placeholder.png";
+}
+
+#titulo-container {
+    vertical-align: top;
+}
+
+
+
+p {
+    font-size:30px;
+    font-weight: bolder;
+    line-height: 1.5;
+    color: black;
+}

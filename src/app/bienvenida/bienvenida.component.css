@@ -1,0 +1,15 @@
+h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    line-height: 1.1;
+    font-family: 'Open Sans Light';
+}
+
+p {
+    font-size: 17;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    font-family: 'Open Sans Light';
+}
