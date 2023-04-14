@@ -1,3 +1,4 @@
 <h1>Bienvenid@</h1>
 <p>Hoy</p>
-<app-datepipe></app-datepipe>
+<p> {{todayNumber | date: 'fullDate'}}</p>
+<p> {{time | async | date: 'h:mm a'}}</p>

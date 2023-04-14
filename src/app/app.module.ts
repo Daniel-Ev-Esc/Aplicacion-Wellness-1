@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
-import { DatepipeComponent } from './datepipe/datepipe.component';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconRegistry } from '@angular/material/icon';
@@ -27,7 +26,6 @@ registerLocaleData(localeEs, 'es');
   declarations: [
     AppComponent,
     BienvenidaComponent,
-    DatepipeComponent,
     AforoComponent,
     ReservacionesComponent,
     MisReservacionesComponent,
