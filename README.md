@@ -1,4 +1,4 @@
-#Aplicación-Wellness
+# Aplicación-Wellness
 
 Un portal a ser utilizado por una institución educativa para proveer información acerca de la cantidad de personas que utilizan las instalaciones deportivas, en tiempo real y en estadísticas, además de permitir reservar ciertas instalaciones deportivas.
 
