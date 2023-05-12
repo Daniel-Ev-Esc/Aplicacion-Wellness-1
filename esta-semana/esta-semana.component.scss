@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.titulo-estasemana{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    position: absolute;
+}
+.separator{
+    width: 10vw;
+    //margin-left: 1.5vw;
+    height: 3px;
+    background-color: white;
+    //flex-grow: 1;
+    //margin-right: 2.5vw;
+    //border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    margin-top: 60px;
+    //z-index: 1;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    //z-index: 0;
+    position: relative;
+}
+/*
+.img-barra{
+    margin-left: 18vw;
+    margin-top: 5.5vh;
+    width: 600px;
+    height: auto;
+    position: relative;
+    
+
+}*/

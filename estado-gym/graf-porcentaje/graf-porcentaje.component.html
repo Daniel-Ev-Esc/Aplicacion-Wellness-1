@@ -1,0 +1,8 @@
+<!-- Despliegue de la gráfica de aforo -->
+<div class="container">
+    <circle-progress [title] = porcentaje_actual [subtitle] = "''" [percent]= porcentaje [space]="-45" [radius]="130" [outerStrokeWidth]="45" 
+        [innerStrokeWidth]="45" [outerStrokeColor]="'#D9D9D9'" [innerStrokeColor]="'rgba(231, 231, 231, 0.13)'" [animation]="true"
+        [animationDuration]="1000" class="grafica">
+    </circle-progress>
+    <div class="personas-container">{{num_personas.toString()}} / {{aforo_max}} Personas</div>
+</div>

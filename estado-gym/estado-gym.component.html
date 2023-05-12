@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="estado">
+        <div class="titulo-aforo">Aforo actual</div>
+        <div class="separator"></div>
+        <div class="fecha-hora ms-5">
+            <p class="saludo">
+                HOY, {{dia.toUpperCase()}}
+            </p>
+            <div class="reloj">
+                    <p class="fecha">{{time | date: 'dd'}} de {{time | date: 'MMMM'}}</p>
+                    <p class="fecha">{{time | date: 'hh:mm a'}}</p>
+            </div>
+        </div>
+        
+        <div class="tabla-estado">
+            <div class="textos-estado ms-5 text-white">
+                <div class="razon-cierre" *ngIf="!estado">
+                </div>
+                
+                <div class="hora-apertura">
+                    <span class="tipo-text"> Hora de {{estado ? 'Cierre' : 'Apertura'}} </span>
+                    <span class="valor-text">{{hora_cambio}}</span>
+                </div>
+            </div>
+            <app-programar-cierre *ngIf="isAdmin=='true'"></app-programar-cierre>
+            <div>
+                <div class="letrero-estado">
+                    <td *ngIf="estado"><span class="icono-estado fas fa-circle ms-4" style="color: green"></span></td>
+                    <td *ngIf="!estado"><span class="icono-estado fas fa-circle ms-4" style="color: red"></span></td>
+                    <td><h1 class="texto-estado text-white">{{estado ? 'Abierto' : 'Cerrado'}}</h1></td>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-graf-porcentaje 
+        [aforo_max]="aforo_max"
+        [num_personas]="aforo_actual"
+        class="grafica"></app-graf-porcentaje>
+</div>
